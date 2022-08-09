@@ -5,12 +5,6 @@ class CarsController extends BaseController {
     super(model);
     this.bookings = db.bookings;
   }
-
-  test(req, res) {
-    console.log(req.url);
-    console.log(this.model);
-    res.status(200).json({ status: 'test-successful' });
-  }
 }
 
 module.exports = CarsController;

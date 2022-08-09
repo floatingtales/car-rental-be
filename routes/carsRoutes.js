@@ -8,6 +8,7 @@ class CarsRoutes extends BaseRoutes {
   routes() {
     router.get('/test', this.controller.test.bind(this.controller));
     router.get('/getAll', this.controller.getAll.bind(this.controller));
+    router.get('/getOne/:carId', this.controller.getOne.bind(this.controller));
     return router;
   }
 }

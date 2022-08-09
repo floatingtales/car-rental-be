@@ -1,33 +1,33 @@
 const initBookingsModel = (sequelize, DataTypes) => sequelize.define(
-  'cars',
+  'bookings',
   {
-    booking_id: {
+    bookingId: {
       allowNull: false,
       autoIncrement: true,
       primaryKey: true,
       type: DataTypes.INTEGER,
     },
-    car_id: {
+    carId: {
       allowNull: false,
       type: DataTypes.INTEGER,
     },
-    start_date: {
+    startDate: {
       allowNull: false,
       type: DataTypes.DATE,
     },
-    end_date: {
+    endDate: {
       allowNull: false,
       type: DataTypes.DATE,
     },
-    user_email: {
+    userEmail: {
       allowNull: false,
       type: DataTypes.STRING,
     },
-    user_fname: {
+    userFname: {
       allowNull: false,
       type: DataTypes.STRING,
     },
-    user_lname: {
+    userLname: {
       allowNull: false,
       type: DataTypes.STRING,
     },

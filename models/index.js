@@ -18,9 +18,6 @@ if (config.use_env_variable) {
 db.cars = initCarsModel(sequelize, Sequelize.DataTypes);
 db.bookings = initBookingsModel(sequelize, Sequelize.DataTypes);
 
-db.cars.hasMany(db.bookings);
-db.bookings.belongsTo(db.cars);
-
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
